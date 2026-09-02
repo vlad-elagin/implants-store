@@ -1,0 +1,18 @@
+.app {
+  min-height: 100vh;
+  min-height: 100svh;
+
+  overflow: hidden;
+  background: #020608;
+}
+
+.stage {
+  position: relative;
+
+  width: min(100vw, calc(100svh * 16 / 9));
+  height: 100svh;
+
+  margin-inline: auto;
+
+  outline: 1px solid red;
+}

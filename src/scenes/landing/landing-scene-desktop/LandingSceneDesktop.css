@@ -1,0 +1,27 @@
+.landing-scene--desktop {
+}
+
+.landing-scene__hero {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: left center;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.landing-scene__content {
+  position: absolute;
+
+  top: 50%;
+  right: clamp(2rem, 5%, 6rem);
+
+  width: min(42%, 42rem);
+
+  transform: translateY(-50%);
+}

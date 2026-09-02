@@ -1,15 +1,14 @@
 import "./App.css";
-import { ImplantNavigation } from "../components/implant-navigation/ImplantNavigation";
-import { SelectedImplant } from "../components/selected-implant/SelectedImplant";
-import { ZoneNavigation } from "../components/zone-navigation/ZoneNavigation";
+import { useMediaQuery } from "usehooks-ts";
+import { LandingSceneDesktop } from "../scenes/landing/landing-scene-desktop/LandingSceneDesktop";
+import { LandingSceneMobile } from "../scenes/landing/LandingSceneMobile";
 
 function App() {
+  const isMobile = useMediaQuery("(max-width: 767px)");
+
   return (
     <main className="app">
-      <h1 className="app__title">Cybernetic Implant Catalogue</h1>
-      <ZoneNavigation />
-      <ImplantNavigation />
-      <SelectedImplant />
+      <div className="stage">{isMobile ? <LandingSceneMobile /> : <LandingSceneDesktop />}</div>
     </main>
   );
 }
