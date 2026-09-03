@@ -54,3 +54,22 @@ svg {
   display: block;
   max-width: 100%;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+:root {
+  /* Colors */
+  --color-background: #030406;
+  --color-text-primary: #d6d6d6;
+  --color-text-secondary: #87a0aa;
+
+  --color-red: #ce1918;
+  --color-cyan: #01a5d9;
+  --color-yellow: #fded01;
+
+  --color-border: rgb(135 171 184 / 22%);
+
+  /* Fonts */
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
