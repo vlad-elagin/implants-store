@@ -1,0 +1,17 @@
+.heading {
+  color: var(--color-text-primary);
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 14vw, 14rem);
+  font-weight: 400;
+  font-variation-settings:
+    "wdth" 33,
+    "wght" 500;
+  line-height: 0.85;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.heading__highlight {
+  color: var(--color-red);
+}

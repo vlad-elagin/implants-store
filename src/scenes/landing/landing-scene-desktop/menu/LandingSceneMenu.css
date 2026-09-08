@@ -1,0 +1,78 @@
+.landing-scene__menu {
+  width: min(39%, 42rem);
+  margin: 16vh clamp(2rem, 8vw, 6rem) 0 0;
+  color: white;
+  z-index: 1;
+
+  outline: 1px solid greenyellow;
+}
+
+.landing-scene__tagline {
+  margin-top: 0.3rem;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: clamp(0.65rem, 1.45vw, 1.5rem);
+  font-weight: 400;
+  font-variation-settings:
+    "wdth" 55,
+    "wght" 750;
+  text-align: justify;
+  text-align-last: justify;
+  letter-spacing: 0.3em;
+  white-space: nowrap;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.landing-scene__introduction {
+  margin-top: clamp(5rem, 10vh, 9rem);
+}
+
+.landing-scene__title {
+  color: var(--color-text-primary);
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4vw, 4.5rem);
+  font-weight: 400;
+  font-variation-settings:
+    "wdth" 55,
+    "wght" 750;
+  letter-spacing: 0.015em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.landing-scene__title::after {
+  content: "_";
+  display: inline-block;
+  margin-left: 0.12em;
+  color: var(--color-yellow);
+  animation: landing-cursor-blink 1s steps(1, end) infinite;
+}
+
+.landing-scene__description {
+  max-width: 34rem;
+  margin-top: 1.5rem;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: clamp(0.8rem, 1.3vw, 1.2rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.55;
+}
+
+.landing-scene__catalogue-link {
+  margin-top: 3rem;
+  color: var(--color-yellow);
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2.75rem);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+@keyframes landing-cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
