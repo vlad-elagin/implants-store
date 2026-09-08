@@ -1,4 +1,4 @@
-import { useCatalogue, useSelectedZone } from "../../catalogue/selectors";
+import { useCatalogue, useSelectedZone } from "@/catalogue/selectors";
 
 export function ImplantNavigation() {
   const { selectedImplantId, selectImplant } = useCatalogue();

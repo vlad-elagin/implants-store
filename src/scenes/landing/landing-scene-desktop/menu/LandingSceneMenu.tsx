@@ -1,4 +1,5 @@
-import { Heading } from "../../../../components/heading/Heading";
+import { Divider } from "@/components/divider/Divider";
+import { Heading } from "@/components/heading/Heading";
 
 export function LandingSceneMenu() {
   return (
@@ -9,6 +10,8 @@ export function LandingSceneMenu() {
         </Heading>
         <p className="landing-scene__tagline">Aftermarket human augmentation</p>
       </header>
+
+      <Divider />
 
       <div className="landing-scene__introduction">
         <h2 className="landing-scene__title">Biology was only the first draft.</h2>

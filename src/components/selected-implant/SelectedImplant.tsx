@@ -1,4 +1,4 @@
-import { useSelectedImplant, useSelectedZone } from "../../catalogue/selectors";
+import { useSelectedImplant, useSelectedZone } from "@/catalogue/selectors";
 
 export function SelectedImplant() {
   const selectedZone = useSelectedZone();

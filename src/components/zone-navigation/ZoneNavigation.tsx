@@ -1,5 +1,5 @@
-import { catalog } from "../../catalogue/catalogue";
-import { useCatalogue } from "../../catalogue/selectors";
+import { catalog } from "@/catalogue/catalogue";
+import { useCatalogue } from "@/catalogue/selectors";
 
 export function ZoneNavigation() {
   const { selectedZoneId, selectZone } = useCatalogue();

@@ -1,7 +1,7 @@
 import "./LandingSceneDesktop.css";
 
-import landingHero from "../../../assets/images/landing/landing-hero.webp";
-import { AppImage } from "../../../components/image/app-image/AppImage";
+import landingHero from "@/assets/images/landing/landing-hero.webp";
+import { AppImage } from "@/components/image/app-image/AppImage";
 import { LandingSceneMenu } from "./menu/LandingSceneMenu";
 
 export function LandingSceneDesktop() {

@@ -1,6 +1,6 @@
-import { ImplantNavigation } from "../../components/implant-navigation/ImplantNavigation";
-import { SelectedImplant } from "../../components/selected-implant/SelectedImplant";
-import { ZoneNavigation } from "../../components/zone-navigation/ZoneNavigation";
+import { ImplantNavigation } from "@/components/implant-navigation/ImplantNavigation";
+import { SelectedImplant } from "@/components/selected-implant/SelectedImplant";
+import { ZoneNavigation } from "@/components/zone-navigation/ZoneNavigation";
 
 export function CatalogueSceneDesktop() {
   return (
