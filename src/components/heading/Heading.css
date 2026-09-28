@@ -15,3 +15,8 @@
 .heading__highlight {
   color: var(--color-red);
 }
+
+.heading__separator {
+  display: inline-block;
+  transform: scaleY(1.03);
+}
