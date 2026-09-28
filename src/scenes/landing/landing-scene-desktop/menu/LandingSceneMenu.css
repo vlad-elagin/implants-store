@@ -100,11 +100,7 @@
     height: 70%;
     clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
 
-    background: repeating-linear-gradient(
-      45deg,
-      rgb(from var(--color-text-secondary) r g b / 30%) 0 2px,
-      transparent 2px 6px
-    );
+    background: repeating-linear-gradient(45deg, var(--color-border), transparent 2px 6px);
   }
 
   & .catalogue-link-arrow {
@@ -120,7 +116,7 @@
 
     & .catalogue-link-arrow__border {
       fill: none;
-      stroke: rgb(from var(--color-text-secondary) r g b / 30%);
+      stroke: var(--color-border);
       stroke-width: 1;
       vector-effect: non-scaling-stroke;
     }
@@ -155,7 +151,7 @@
 
     line {
       stroke: var(--color-yellow);
-      stroke-width: 3;
+      stroke-width: 1;
       vector-effect: non-scaling-stroke;
     }
   }
