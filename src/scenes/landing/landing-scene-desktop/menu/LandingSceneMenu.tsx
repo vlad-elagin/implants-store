@@ -34,8 +34,10 @@ export function LandingSceneMenu() {
               <circle className="catalogue-link-arrow__dot" cx="85" cy="50" r="2" />
               <circle className="catalogue-link-arrow__dot" cx="5" cy="50" r="2" />
             </g>
-            <line className="catalogue-link-arrow__line" x1="34" y1="27.5" x2="58" y2="50" />
-            <line className="catalogue-link-arrow__line" x1="58" y1="50" x2="34" y2="72.5" />
+            <g className="catalogue-link-arrow__chevron">
+              <line className="catalogue-link-arrow__line" x1="34" y1="27.5" x2="58" y2="50" />
+              <line className="catalogue-link-arrow__line" x1="58" y1="50" x2="34" y2="72.5" />
+            </g>
           </svg>
           <svg className="catalogue-link-border" aria-hidden="true" preserveAspectRatio="none">
             {[

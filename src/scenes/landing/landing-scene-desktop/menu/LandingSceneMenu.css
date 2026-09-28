@@ -107,6 +107,7 @@
     width: clamp(4rem, 3vw, 5rem);
     height: auto;
     pointer-events: none;
+    transition: transform 300ms ease;
 
     & .catalogue-link-arrow__ring {
       transform-box: view-box;
@@ -140,6 +141,12 @@
     transform: rotate(90deg);
   }
 
+  &:hover .catalogue-link-arrow,
+  &:focus-visible .catalogue-link-arrow {
+    transform: translateX(1rem);
+    transition-delay: 500ms;
+  }
+
   & .catalogue-link-border {
     position: absolute;
     left: -1px;
@@ -158,8 +165,14 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .landing-scene__catalogue-link .catalogue-link-arrow__ring {
+  .landing-scene__catalogue-link .catalogue-link-arrow__ring,
+  .landing-scene__catalogue-link .catalogue-link-arrow {
     transition: none;
+  }
+
+  .landing-scene__catalogue-link:hover .catalogue-link-arrow,
+  .landing-scene__catalogue-link:focus-visible .catalogue-link-arrow {
+    transition-delay: 0ms;
   }
 }
 
