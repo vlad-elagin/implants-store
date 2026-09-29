@@ -8,6 +8,7 @@
 .landing-scene__tagline {
   margin-top: 0.2rem;
   color: var(--color-text-secondary);
+  filter: blur(0.5px);
   font-family: var(--font-mono);
   font-size: clamp(0.65rem, 1.45vw, 1.5rem);
   font-weight: 400;
@@ -33,6 +34,7 @@
 
 .landing-scene__title {
   color: var(--color-text-primary);
+  filter: blur(0.5px);
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 3.33vw, 4rem);
   font-weight: 400;
@@ -48,7 +50,6 @@
   content: "_";
   display: inline-block;
   margin-left: 0.12em;
-  color: var(--color-yellow);
   animation: landing-cursor-blink 1s steps(1, end) infinite;
 }
 
@@ -56,6 +57,7 @@
   max-width: 75%;
   margin-top: clamp(0.53rem, 1.11vw, 1.33rem);
   color: var(--color-text-secondary);
+  filter: blur(0.6px);
   font-family: var(--font-mono);
   font-size: clamp(0.8rem, 1.2vw, 1.2rem);
   font-weight: 400;
@@ -75,7 +77,7 @@
   padding: 0 clamp(1rem, 1rem, 2rem) 0 clamp(1rem, 1rem, 2rem);
   appearance: none;
   background-color: transparent;
-  border: 1px solid rgb(from var(--color-yellow) r g b / 30%);
+  border: 1px solid transparent;
   color: var(--color-yellow);
   font-family: var(--font-display);
   font-size: clamp(1rem, 1.5rem, 2.75rem);
@@ -91,8 +93,141 @@
   justify-content: space-between;
   gap: 1rem;
 
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    pointer-events: none;
+    filter: blur(0.5px);
+  }
+
+  &::before {
+    top: 0;
+    background: linear-gradient(
+      90deg,
+      rgb(from var(--color-yellow) r g b / 58%),
+      rgb(from var(--color-yellow) r g b / 24%) 11%,
+      rgb(from var(--color-yellow) r g b / 49%) 27%,
+      rgb(from var(--color-yellow) r g b / 18%) 44%,
+      rgb(from var(--color-yellow) r g b / 43%) 66%,
+      rgb(from var(--color-yellow) r g b / 22%) 83%,
+      rgb(from var(--color-yellow) r g b / 56%)
+    );
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 50%,
+      90% 85%,
+      81% 35%,
+      68% 78%,
+      59% 40%,
+      43% 38%,
+      34% 90%,
+      24% 42%,
+      17% 35%,
+      10% 75%,
+      0 52%
+    );
+  }
+
+  &::after {
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      rgb(from var(--color-yellow) r g b / 50%),
+      rgb(from var(--color-yellow) r g b / 20%) 18%,
+      rgb(from var(--color-yellow) r g b / 46%) 33%,
+      rgb(from var(--color-yellow) r g b / 16%) 51%,
+      rgb(from var(--color-yellow) r g b / 55%) 72%,
+      rgb(from var(--color-yellow) r g b / 26%) 91%,
+      rgb(from var(--color-yellow) r g b / 52%)
+    );
+    clip-path: polygon(
+      0 100%,
+      100% 100%,
+      100% 55%,
+      88% 25%,
+      77% 70%,
+      68% 55%,
+      53% 18%,
+      44% 68%,
+      31% 60%,
+      24% 25%,
+      12% 72%,
+      4% 32%,
+      0 58%
+    );
+  }
+
+  .catalogue-link-edge {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    pointer-events: none;
+    filter: blur(0.5px);
+  }
+
+  .catalogue-link-edge--left {
+    left: 0;
+    clip-path: polygon(
+      0 0,
+      55% 0,
+      90% 6%,
+      35% 17%,
+      55% 28%,
+      100% 33%,
+      40% 49%,
+      75% 63%,
+      35% 77%,
+      85% 88%,
+      50% 100%,
+      0 100%
+    );
+    background: linear-gradient(
+      180deg,
+      rgb(from var(--color-yellow) r g b / 54%),
+      rgb(from var(--color-yellow) r g b / 19%) 17%,
+      rgb(from var(--color-yellow) r g b / 47%) 34%,
+      rgb(from var(--color-yellow) r g b / 17%) 56%,
+      rgb(from var(--color-yellow) r g b / 40%) 85%,
+      rgb(from var(--color-yellow) r g b / 55%)
+    );
+  }
+
+  .catalogue-link-edge--right {
+    right: 0;
+    clip-path: polygon(
+      100% 0,
+      48% 0,
+      60% 13%,
+      18% 22%,
+      70% 35%,
+      35% 48%,
+      82% 58%,
+      25% 73%,
+      65% 84%,
+      30% 95%,
+      55% 100%,
+      100% 100%
+    );
+    background: linear-gradient(
+      180deg,
+      rgb(from var(--color-yellow) r g b / 58%),
+      rgb(from var(--color-yellow) r g b / 24%) 25%,
+      rgb(from var(--color-yellow) r g b / 42%) 49%,
+      rgb(from var(--color-yellow) r g b / 16%) 69%,
+      rgb(from var(--color-yellow) r g b / 48%) 93%,
+      rgb(from var(--color-yellow) r g b / 52%)
+    );
+  }
+
   .catalogue-link-text {
     flex: 1;
+    filter: blur(0.5px);
   }
 
   .catalogue-link-stripe {
@@ -107,7 +242,6 @@
     width: clamp(4rem, 3vw, 5rem);
     height: auto;
     pointer-events: none;
-    transition: transform 300ms ease;
 
     & .catalogue-link-arrow__ring {
       transform-box: view-box;
@@ -119,32 +253,42 @@
       fill: none;
       stroke: var(--color-border);
       stroke-width: 1;
+      stroke-dasharray: 95 3 66 2 82 3;
       vector-effect: non-scaling-stroke;
+      opacity: 0.65;
+      filter: blur(0.5px);
     }
 
     & .catalogue-link-arrow__dot {
       fill: var(--color-yellow);
+      opacity: 0.65;
+      filter: blur(0.25px);
+
+      &.catalogue-link-arrow__dot--dim {
+        opacity: 0.4;
+        filter: blur(0.5px);
+      }
+
+      &.catalogue-link-arrow__dot--bright {
+        opacity: 0.85;
+        filter: blur(0.15px);
+      }
     }
 
     & .catalogue-link-arrow__line {
       fill: none;
-      stroke: var(--color-yellow);
+      stroke: rgb(from var(--color-yellow) r g b / 85%);
       stroke-width: 3;
       stroke-linecap: square;
       stroke-linejoin: round;
       vector-effect: non-scaling-stroke;
+      filter: blur(0.5px);
     }
   }
 
   &:hover .catalogue-link-arrow__ring,
   &:focus-visible .catalogue-link-arrow__ring {
     transform: rotate(90deg);
-  }
-
-  &:hover .catalogue-link-arrow,
-  &:focus-visible .catalogue-link-arrow {
-    transform: translateX(1rem);
-    transition-delay: 500ms;
   }
 
   & .catalogue-link-border {
@@ -157,22 +301,28 @@
     pointer-events: none;
 
     line {
-      stroke: var(--color-yellow);
-      stroke-width: 1;
+      stroke: rgb(from var(--color-yellow) r g b / 65%);
+      stroke-width: 1.1;
       vector-effect: non-scaling-stroke;
+      opacity: 0.75;
+      filter: blur(0.45px);
+
+      &:nth-of-type(3n + 2) {
+        stroke-width: 0.7;
+        opacity: 0.55;
+        filter: blur(0.65px);
+      }
+
+      &:nth-of-type(4n + 3) {
+        stroke-width: 1.5;
+      }
     }
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .landing-scene__catalogue-link .catalogue-link-arrow__ring,
-  .landing-scene__catalogue-link .catalogue-link-arrow {
+  .landing-scene__catalogue-link .catalogue-link-arrow__ring {
     transition: none;
-  }
-
-  .landing-scene__catalogue-link:hover .catalogue-link-arrow,
-  .landing-scene__catalogue-link:focus-visible .catalogue-link-arrow {
-    transition-delay: 0ms;
   }
 }
 

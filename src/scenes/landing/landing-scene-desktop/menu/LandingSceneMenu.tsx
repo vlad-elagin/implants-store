@@ -25,14 +25,39 @@ export function LandingSceneMenu() {
 
       <nav className="landing-scene__navigation" aria-label="Landing navigation">
         <button className="landing-scene__catalogue-link" type="button">
+          <span className="catalogue-link-edge catalogue-link-edge--left" aria-hidden="true" />
+          <span className="catalogue-link-edge catalogue-link-edge--right" aria-hidden="true" />
           <span className="catalogue-link-text">Explore implants</span>
           <span className="catalogue-link-stripe" />
           <svg className="catalogue-link-arrow" viewBox="0 0 100 100" aria-hidden="true">
             <g className="catalogue-link-arrow__ring">
               <circle className="catalogue-link-arrow__border" cx="45" cy="50" r="40" />
-              <circle className="catalogue-link-arrow__dot" cx="45" cy="10" r="2" />
-              <circle className="catalogue-link-arrow__dot" cx="85" cy="50" r="2" />
-              <circle className="catalogue-link-arrow__dot" cx="5" cy="50" r="2" />
+              <circle
+                className="catalogue-link-arrow__dot catalogue-link-arrow__dot--dim"
+                cx="41"
+                cy="10.2"
+                r="1.5"
+              />
+              <circle className="catalogue-link-arrow__dot" cx="49" cy="10.2" r="1.8" />
+              <circle
+                className="catalogue-link-arrow__dot catalogue-link-arrow__dot--bright"
+                cx="85"
+                cy="50"
+                r="1.8"
+              />
+              <circle
+                className="catalogue-link-arrow__dot catalogue-link-arrow__dot--dim"
+                cx="41"
+                cy="89.8"
+                r="1.5"
+              />
+              <circle className="catalogue-link-arrow__dot" cx="49" cy="89.8" r="1.8" />
+              <circle
+                className="catalogue-link-arrow__dot catalogue-link-arrow__dot--dim"
+                cx="5"
+                cy="50"
+                r="1.6"
+              />
             </g>
             <g className="catalogue-link-arrow__chevron">
               <line className="catalogue-link-arrow__line" x1="34" y1="27.5" x2="58" y2="50" />
