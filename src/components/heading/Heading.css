@@ -12,11 +12,34 @@
   white-space: nowrap;
 }
 
-.heading__highlight {
-  color: var(--color-red);
+.heading__base,
+.heading__highlight,
+.heading__separator {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-repeat: no-repeat, repeat;
+  background-size:
+    auto,
+    180px 180px;
+  background-blend-mode: multiply;
+}
+
+.heading__base {
+  background-image:
+    linear-gradient(var(--color-text-primary), var(--color-text-primary)),
+    url("/images/texture-distressed.png");
+}
+
+.heading__highlight,
+.heading__separator {
+  background-image:
+    linear-gradient(var(--color-red), var(--color-red)), url("/images/texture-distressed.png");
 }
 
 .heading__separator {
   display: inline-block;
   transform: scaleY(1.03);
+  padding-inline: 0.04em;
+  margin-inline: -0.04em;
 }

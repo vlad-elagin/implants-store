@@ -6,7 +6,7 @@ export function LandingSceneMenu() {
     <div className="landing-scene__menu">
       <header className="landing-scene__header">
         <Heading>
-          Null{" "}
+          <span className="heading__base">Null</span>{" "}
           <span className="heading__highlight">
             <span className="heading__separator">//</span> Flesh
           </span>
