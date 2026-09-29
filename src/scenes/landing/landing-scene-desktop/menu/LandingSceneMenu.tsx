@@ -11,23 +11,27 @@ export function LandingSceneMenu() {
             <span className="heading__separator">//</span> Flesh
           </span>
         </Heading>
-        <p className="landing-scene__tagline">Aftermarket human augmentation</p>
+        <p className="landing-scene__tagline type-technical text-muted text-soft">
+          Aftermarket human augmentation
+        </p>
       </header>
 
       <Divider />
 
       <div className="landing-scene__introduction">
-        <h2 className="landing-scene__title">Biology was only the first draft.</h2>
-        <p className="landing-scene__description">
+        <h2 className="landing-scene__title type-display text-soft">
+          Biology was only the first draft.
+        </h2>
+        <p className="landing-scene__description text-muted text-soft">
           Aftermarket implants engineered to replace weakness with purpose-built performance.
         </p>
       </div>
 
       <nav className="landing-scene__navigation" aria-label="Landing navigation">
-        <button className="landing-scene__catalogue-link" type="button">
+        <button className="landing-scene__catalogue-link type-display" type="button">
           <span className="catalogue-link-edge catalogue-link-edge--left" aria-hidden="true" />
           <span className="catalogue-link-edge catalogue-link-edge--right" aria-hidden="true" />
-          <span className="catalogue-link-text">Explore implants</span>
+          <span className="catalogue-link-text text-soft">Explore implants</span>
           <span className="catalogue-link-stripe" />
           <svg className="catalogue-link-arrow" viewBox="0 0 100 100" aria-hidden="true">
             <g className="catalogue-link-arrow__ring">

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap");
+@import "./styles/typography.css";
 
 /* Minimal browser-style reset. Add project-specific styles in App.css. */
 
@@ -62,6 +63,7 @@ svg {
   --color-background: #030406;
   --color-text-primary: #d6d6d6;
   --color-text-secondary: #6d9ba8;
+  --color-text-telemetry: rgb(from var(--color-cyan) r g b / 75%);
 
   --color-red: #ce1918;
   --color-cyan: #01a5d9;

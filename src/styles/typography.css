@@ -1,0 +1,19 @@
+.type-display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}
+
+.type-technical {
+  font-family: var(--font-mono);
+  font-variation-settings:
+    "wdth" 55,
+    "wght" 750;
+}
+
+.text-muted {
+  color: var(--color-text-secondary);
+}
+
+.text-soft {
+  filter: blur(var(--text-blur, 0.5px));
+}

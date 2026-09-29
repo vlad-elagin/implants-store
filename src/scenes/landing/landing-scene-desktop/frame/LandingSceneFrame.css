@@ -67,12 +67,8 @@
 
   span {
     color: var(--color-red);
-    font-family: var(--font-mono);
     font-size: clamp(0.65rem, 0.8rem, 1.5rem);
     font-weight: 400;
-    font-variation-settings:
-      "wdth" 55,
-      "wght" 750;
   }
 }
 
@@ -86,13 +82,9 @@
   gap: 1rem;
   pointer-events: none;
 
-  color: rgb(from var(--color-cyan) r g b / 75%);
-  font-family: var(--font-mono);
+  color: var(--color-text-telemetry);
   font-size: clamp(0.65rem, 0.8rem, 1.5rem);
   font-weight: 400;
-  font-variation-settings:
-    "wdth" 55,
-    "wght" 750;
 
   .landing-scene__coord-dots {
     transform: translateX(0.5rem);
@@ -112,13 +104,9 @@
   gap: 0.7rem;
 
   > span {
-    color: rgb(from var(--color-cyan) r g b / 75%);
-    font-family: var(--font-mono);
+    color: var(--color-text-telemetry);
     font-size: clamp(0.65rem, 0.8rem, 1.5rem);
     font-weight: 400;
-    font-variation-settings:
-      "wdth" 55,
-      "wght" 750;
   }
 
   .barcode {

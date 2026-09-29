@@ -108,7 +108,7 @@ export function LandingSceneFrame() {
         />
       </svg>
 
-      <div className="landing-scene__sysinfo">
+      <div className="landing-scene__sysinfo type-technical">
         <div>
           <span>SYS_ID</span>
           <span>NF-00</span>
@@ -120,7 +120,7 @@ export function LandingSceneFrame() {
         </div>
       </div>
 
-      <div className="landing-scene__coords">
+      <div className="landing-scene__coords type-technical">
         <span>+ 35.6895° N, 139.6917° E</span>
   <svg className="landing-scene__coord-dots" viewBox="0 0 40 70" aria-hidden="true">
           {coordinateDots.map(({ cx, cy }) => (
@@ -130,7 +130,7 @@ export function LandingSceneFrame() {
       </div>
 
       <div className="landing-scene__code">
-        <span>NF-0001-00-A</span>
+        <span className="type-technical">NF-0001-00-A</span>
         <div className="barcode" aria-hidden="true">
           <span className="barcode__arrow" />
           <div className="barcode__bars barcode__bars--red" />
